@@ -10,11 +10,13 @@ import { Button } from "azure-devops-ui/Button";
 import * as React from "react";
 import { showRootComponent } from "../../Common";
 
-interface WorkItemYamlDeploymentsControlComponentState {
+interface WorkItemYamlPipelineDeploymentsControlComponentState {
   eventContent: string;
 }
 
-export class WorkItemYamlDeploymentsControlComponent extends React.Component<{}, WorkItemYamlDeploymentsControlComponentState> {
+export class WorkItemYamlPipelineDeploymentsControlComponent 
+  extends React.Component<{}, WorkItemYamlPipelineDeploymentsControlComponentState> {
+  
   constructor(props: {}) {
     super(props);
     this.state = {
@@ -100,6 +102,6 @@ export class WorkItemYamlDeploymentsControlComponent extends React.Component<{},
   }
 }
 
-export default WorkItemYamlDeploymentsControlComponent;
+export default WorkItemYamlPipelineDeploymentsControlComponent;
 
-showRootComponent(<WorkItemYamlDeploymentsControlComponent />);
+showRootComponent(<WorkItemYamlPipelineDeploymentsControlComponent />);
